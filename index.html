@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Syntax Holdings Inc. — Jedan holding, više disciplina</title>
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<meta name="theme-color" content="#050810">
+<meta name="description" content="Syntax Holdings Inc. okuplja digitalne, tehnološke i produkcijske tvrtke: Syntax Digital, Syntax Tech i Syntax Studios. Uskoro Syntax Scale i Syntax Estates.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f5f7fb;--bg2:#ffffff;--tx:#0b1020;--mu:#5a6478;--ln:#d9dfeb;--ac:#2563eb;--ac2:#0891b2;--glow:rgba(37,99,235,.12);color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#050810;--bg2:#0c1220;--tx:#eaf0ff;--mu:#8a96b0;--ln:#1b2540;--ac:#4f8cff;--ac2:#22d3ee;--glow:rgba(79,140,255,.16);color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#050810;--bg2:#0c1220;--tx:#eaf0ff;--mu:#8a96b0;--ln:#1b2540;--ac:#4f8cff;--ac2:#22d3ee;--glow:rgba(79,140,255,.16);color-scheme:dark}
+html{scroll-behavior:smooth;scroll-padding-top:calc(72px + env(safe-area-inset-top,0px))}
+*{box-sizing:border-box;margin:0}
+body{background:var(--bg);color:var(--tx);font:16px/1.65 Inter,system-ui,sans-serif;overflow-x:hidden}
+h1,h2,h3,.logo{font-family:"Space Grotesk",system-ui,sans-serif;letter-spacing:-.02em;line-height:1.1}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1100px;margin:0 auto;padding:0 24px}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:color-mix(in srgb,var(--bg) 85%,transparent);backdrop-filter:blur(12px);border-bottom:1px solid var(--ln)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font-weight:700;font-size:19px}.logo b{color:var(--ac)}
+nav{display:flex;gap:26px;font-size:14px;color:var(--mu)}nav a:hover{color:var(--tx)}
+.btn{display:inline-block;padding:12px 22px;border-radius:999px;font-weight:500;font-size:15px;border:1px solid var(--ln);transition:.2s}
+.btn.p{background:linear-gradient(135deg,var(--ac),var(--ac2));color:#fff;border:0}
+.btn:hover{transform:translateY(-2px)}
+.hero{padding:110px 0 80px;background:radial-gradient(60% 50% at 70% 0%,var(--glow),transparent)}
+.tag{display:inline-block;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--ac2);border:1px solid var(--ln);padding:6px 14px;border-radius:999px;margin-bottom:26px}
+h1{font-size:clamp(40px,7vw,78px);max-width:13ch}
+h1 em{font-style:normal;background:linear-gradient(135deg,var(--ac),var(--ac2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.lead{max-width:56ch;color:var(--mu);font-size:18px;margin:26px 0 34px}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:64px;border-top:1px solid var(--ln);padding-top:28px}
+.stats b{font:700 34px "Space Grotesk",sans-serif;display:block}.stats span{color:var(--mu);font-size:14px}
+section{padding:90px 0}
+.eyebrow{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--ac2);margin-bottom:12px}
+h2{font-size:clamp(30px,4.5vw,46px);margin-bottom:16px}
+.sub{color:var(--mu);max-width:58ch}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px;margin-top:44px}
+.card{background:var(--bg2);border:1px solid var(--ln);border-radius:18px;padding:28px;display:flex;flex-direction:column;gap:12px;transition:.25s}
+a.card:hover{border-color:var(--ac);transform:translateY(-4px);box-shadow:0 14px 40px var(--glow)}
+.card h3{font-size:24px}.card p{color:var(--mu);font-size:15px;flex:1}
+.row{display:flex;justify-content:space-between;align-items:center;font-size:13px}
+.badge{padding:4px 11px;border-radius:999px;border:1px solid var(--ln);color:var(--mu)}
+.badge.on{color:var(--ac2);border-color:var(--ac2)}
+.card.soon{border-style:dashed;opacity:.8}
+.ico{width:44px;height:44px;display:grid;place-items:center;border:1.5px solid var(--ac);color:var(--ac);font:700 18px "Space Grotesk",sans-serif}
+.ico.c{border-radius:50%}.ico.s{border-radius:8px;border-color:var(--mu);color:var(--mu)}
+.map{margin-top:44px;background:var(--bg2);border:1px solid var(--ln);border-radius:22px;padding:12px}
+.map svg{width:100%;height:auto;display:block}
+.map .ln{stroke:var(--ln);stroke-width:1.5}.map .n{fill:var(--bg);stroke:var(--ac);stroke-width:2}
+.map .q{fill:var(--bg);stroke:var(--mu);stroke-width:2;stroke-dasharray:5 4}
+.map text{fill:var(--tx);font:500 14px "Space Grotesk",sans-serif;text-anchor:middle}
+.map .hub{fill:url(#g)}.map .sm{fill:var(--mu);font-size:11px}
+.legend{display:flex;gap:22px;justify-content:center;font-size:13px;color:var(--mu);padding:6px 0 12px;flex-wrap:wrap}
+.vals{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:30px;margin-top:44px}
+.vals div{border-left:2px solid var(--ac);padding-left:18px}.vals h3{font-size:20px;margin-bottom:6px}.vals p{color:var(--mu);font-size:15px}
+.contact{text-align:center;background:radial-gradient(50% 70% at 50% 100%,var(--glow),transparent);border-top:1px solid var(--ln)}
+.contact .sub{margin:0 auto 30px}
+footer{border-top:1px solid var(--ln);padding:28px 0;color:var(--mu);font-size:13px}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+@media(max-width:720px){nav{display:none}.hero{padding-top:70px}.stats{grid-template-columns:1fr 1fr 1fr}.stats b{font-size:26px}}
+</style>
+</head>
+<body>
+<header><div class="wrap"><a href="#top" class="logo">Syntax<b>.</b>Holdings</a>
+<nav><a href="tvrtke.html">Tvrtke</a><a href="ekosustav.html">Ekosustav</a><a href="vizija.html">Vizija</a><a href="kontakt.html">Kontakt</a></nav>
+<a class="btn p" href="kontakt.html">Javite se</a></div></header>
+
+<main id="top">
+<div class="hero"><div class="wrap">
+<span class="tag">Syntax Holdings Inc.</span>
+<h1>Jedan holding. <em>Više disciplina.</em></h1>
+<p class="lead">Okupljamo tvrtke koje grade digitalne proizvode, tehnologiju i sadržaj — i u budućnosti marketing i nekretnine. Svaka radi svoj posao u potpunosti, sve zajedno čine jedan ekosustav.</p>
+<div class="cta"><a class="btn p" href="tvrtke.html">Upoznaj tvrtke</a><a class="btn" href="kontakt.html">Kontakt</a></div>
+<div class="stats"><div><b>3</b><span>aktivne tvrtke</span></div><div><b>2</b><span>u pripremi</span></div><div><b>1</b><span>zajednička vizija</span></div></div>
+</div></div>
+
+<section id="tvrtke"><div class="wrap">
+<div class="eyebrow">Naše tvrtke</div><h2>Pet brendova, jedan smjer.</h2>
+<p class="sub">Svaka tvrtka ima svoj fokus i svoju publiku. Holding im daje zajedničke temelje: standarde kvalitete, resurse i dugoročnu strategiju.</p>
+<div class="grid">
+<a class="card" href="https://syntax-digital.vercel.app/" target="_blank" rel="noopener"><div class="ico c">D</div><div class="row"><span class="badge on">● Aktivno</span><span>↗</span></div><h3>Syntax Digital</h3><p>Web stranice, web i mobilne aplikacije, SaaS razvoj, SEO i UI/UX dizajn. Moderna tehnologija, čist kod, mjerljivi rezultati.</p></a>
+<a class="card" href="https://syntax-tech.vercel.app/" target="_blank" rel="noopener"><div class="ico c">T</div><div class="row"><span class="badge on">● Aktivno</span><span>↗</span></div><h3>Syntax Tech</h3><p>Digitalna prisutnost za obrte i mala poduzeća: web stranice, novi klijenti i AI automatizacija pod jednim krovom.</p></a>
+<a class="card" href="https://syntax-studio-inc.vercel.app/" target="_blank" rel="noopener"><div class="ico c">S</div><div class="row"><span class="badge on">● Aktivno</span><span>↗</span></div><h3>Syntax Studios</h3><p>Video i content produkcija: brand filmovi, reklame, social content, montaža i color grading. Priče koje se pamte.</p></a>
+<div class="card soon"><div class="ico s">Sc</div><div class="row"><span class="badge">Uskoro</span></div><h3>Syntax Scale</h3><p>Fokus na društvene mreže i SMM: strategija, content i rast brendova online.</p></div>
+<div class="card soon"><div class="ico s">E</div><div class="row"><span class="badge">Uskoro</span></div><h3>Syntax Estates</h3><p>Fokus na nekretnine: prodaja, najam i ulaganja, uz digitalni pristup koji nam je u DNK.</p></div>
+</div></div></section>
+
+<section id="ekosustav" style="background:var(--bg2);border-block:1px solid var(--ln)"><div class="wrap">
+<div class="eyebrow">Ekosustav</div><h2>Kako je sve povezano.</h2>
+<p class="sub">Holding je središte, a tvrtke oko njega nadopunjuju jedna drugu: Digital gradi, Studios snima, Scale širi, Tech automatizira, Estates ulaže.</p>
+<div class="map"><svg viewBox="0 0 800 420" role="img" aria-label="Dijagram Syntax Holdings Inc. i povezanih tvrtki: u sredini holding, oko njega aktivne tvrtke Syntax Digital, Syntax Tech i Syntax Studios (krugovi), te tvrtke u pripremi Syntax Scale i Syntax Estates (isprekidani kvadrati)">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2563eb"/><stop offset="1" stop-color="#0891b2"/></linearGradient></defs>
+<g class="ln"><line x1="400" y1="210" x2="150" y2="90"/><line x1="400" y1="210" x2="150" y2="330"/><line x1="400" y1="210" x2="650" y2="90"/><line x1="400" y1="210" x2="650" y2="330"/><line x1="400" y1="210" x2="400" y2="45" /></g>
+<ellipse class="hub" cx="400" cy="210" rx="120" ry="52"/><text x="400" y="206" style="fill:#fff;font-size:17px;font-weight:700">Syntax Holdings</text><text x="400" y="226" style="fill:#fff;font-size:13px">Inc.</text>
+<circle class="n" cx="150" cy="90" r="46"/><text x="150" y="87">Syntax</text><text x="150" y="105">Tech</text>
+<circle class="n" cx="150" cy="330" r="46"/><text x="150" y="327">Syntax</text><text x="150" y="345">Digital</text>
+<circle class="n" cx="650" cy="90" r="46"/><text x="650" y="87">Syntax</text><text x="650" y="105">Studios</text>
+<rect class="q" x="604" y="290" width="92" height="80" rx="10"/><text x="650" y="327">Syntax</text><text x="650" y="345">Estates</text>
+<rect class="q" x="354" y="10" width="92" height="70" rx="10"/><text x="400" y="42">Syntax</text><text x="400" y="60">Scale</text>
+</svg>
+<div class="legend"><span>● Krug: aktivna tvrtka</span><span>▢ Isprekidani kvadrat: u pripremi</span></div></div>
+</div></section>
+
+<section id="vizija"><div class="wrap">
+<div class="eyebrow">Vizija</div><h2>Gradimo dugoročno.</h2>
+<p class="sub">Syntax Holdings Inc. postoji da svaka tvrtka u grupi može rasti brže nego što bi sama.</p>
+<div class="vals">
+<div><h3>Kvaliteta prije brzine</h3><p>Svaki projekt prolazi isti standard, bez obzira na to koja ga tvrtka isporučuje.</p></div>
+<div><h3>Moderna tehnologija</h3><p>Od vlastitih AI alata do čistog koda: tehnologija je temelj svega što radimo.</p></div>
+<div><h3>Rast zajedno</h3><p>Uspjeh klijenta je naš uspjeh. Gradimo odnose, ne jednokratne projekte.</p></div>
+</div></div></section>
+
+<section id="kontakt" class="contact"><div class="wrap">
+<div class="eyebrow">Kontakt</div><h2>Razgovarajmo.</h2>
+<p class="sub">Za poslovne upite, suradnje i partnerstva javite se na email. Odgovaramo u roku 24 sata.</p>
+<div class="cta" style="justify-content:center"><a class="btn p" href="mailto:syntax.digital.dev@gmail.com">syntax.digital.dev@gmail.com</a><a class="btn" href="https://wa.me/385996649733" target="_blank" rel="noopener">WhatsApp</a></div>
+</div></section>
+</main>
+
+<footer><div class="wrap"><span>© 2026 Syntax Holdings Inc. Sva prava pridržana.</span><span><a href="https://syntax-digital.vercel.app/">Digital</a> · <a href="https://syntax-tech.vercel.app/">Tech</a> · <a href="https://syntax-studio-inc.vercel.app/">Studios</a></span></div></footer>
+</body>
+</html>
